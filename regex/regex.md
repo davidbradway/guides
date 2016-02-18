@@ -71,7 +71,7 @@ http://v.gd/intro_regex (January 2016)
 			3. `\b\d{4}\b` -- word boundaries \\b help but there are still some false positives
 			4. `\b(19|20)\d\d\b` -- better and works for the twenties and twenty-first centuries   
 
-		8. **Pone numbers**   
+		8. **Phone numbers**   
 		*Note: escape the parenthesis \\\(*   
 		*Note: ? indicates optionality matching zero or one occurrence*
 			1. `\(\d{3}\) \d{3}-\d{4}` -- Very specific.  This works as long as phone numbers are formatted consistently
@@ -127,13 +127,13 @@ http://v.gd/intro_regex (January 2016)
 			1. Generate a small list of random names from the [random name generator](http://listofrandomnames.com/)
 			2. Click the "List in text area" button, copy and paste the names list to your buffer
 			3. Replace the text in the RegExr *Text* panel with the random names
-			4. Click the grey *Substitution* bar at the bottom of RegExr
-			5. Remove the `\n# $&:\n\t` code in the *Substitution* panel
+			4. Click the grey *Replace* bar at the bottom of RegExr
+			5. Remove the `\n# $&:\n\t` code in the *Replace* panel
 			
 		2. **Capture and manipulate text**   
 		*In the next steps, *notice* how $1 and $2 will be used to recall the text captured within the parenthesis groupings \(  \)*
 			1. `(\w+) (\w+)` -- in the *Expression* panel to highlight all names
-			2. `"$&"` -- in the *Substitution* pane will reproduce the text pattern matched within forward slashes (*Expression* pane \/     \/)
+			2. `"$&"` -- in the *Replace* pane will reproduce the text pattern matched within forward slashes (*Expression* pane \/     \/)
 			3. `- $2, $1` -- swap the order of the first and last name and precede tha whole name with a dash '-'
 			4. `<b>$2</b>, $1` -- Bold the last name and add a coma   
 			
